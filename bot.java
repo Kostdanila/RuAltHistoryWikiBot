@@ -100,6 +100,10 @@ public class bot extends ListenerAdapter
             Group group = event.getGroup();
             String groupName = group.getName() != null ? group.getName() : "";  //A group name can be null due to it being unnamed.
         }
+	if (msg.equals("!github"))
+        {
+        	channel.sendMessage("https://github.com/Kostdanila/RuAltHistoryWikiBot").queue();
+        }
         else if (msg.equals("!ping"))
         {
         	channel.sendMessage("pong!").queue();
