@@ -100,10 +100,6 @@ public class bot extends ListenerAdapter
             Group group = event.getGroup();
             String groupName = group.getName() != null ? group.getName() : "";  //A group name can be null due to it being unnamed.
         }
-        if (msg.equals("!help"))
-        {
-        	channel.sendMessage("Список комманд: \n 1) !ping -- бот отвечает \"pong!\" \n 2) !help -- список комманд бота").queue();
-        }
         else if (msg.equals("!ping"))
         {
         	channel.sendMessage("pong!").queue();
